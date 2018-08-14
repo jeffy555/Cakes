@@ -1,0 +1,66 @@
+<!--customerLogin-->
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link href="css/customerlogin.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+<section id="login" class="section parallax">
+
+</head>
+<body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Cookie:regular"]
+      }
+    });
+</script>
+
+	<script language="javascript">
+function cuslogincheck(form)
+{
+	if(form.cusname.value == "" || form.cuspass.value == '')
+		{
+			alert('Please enter all the required fields')
+		}
+	else
+		{
+		window.open('http://127.0.0.1:8000/CakeProject/index.html','_self')
+		}
+}
+</script>
+
+
+
+<form>
+
+<h1 class='logintitle'>Customer Portal</h1>
+  <div class='loginbody'>
+
+
+<p> Username:- </p>
+
+	<input type='text' id='cusname' value='' name='cusname' placeholder='' required>
+
+<p> Password:- </p>
+
+	<input type='password' value='' id='cuspass' name='cuspass' placeholder=''>
+
+		<div class='logincenter'>
+		<!--<a href='#' title='Login' value='Login' class='loginlink' onclick="return cuslogincheck('form')"></a>		-->
+			<input type='button' onclick='cuslogincheck(this.form) 'title='Login' value='Login' class='button'/>
+		</div>
+
+
+			<a href='#' class='loginpassword'>Forgot Password</a>
+	</div>
+	</form>
+
+
+</body>
+</html>

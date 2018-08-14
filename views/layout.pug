@@ -1,0 +1,612 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title Cake Taster
+  meta(name='ROBOTS' content='NOINDEX, NOFOLLOW')
+  meta(name='author' content='')
+  meta(name='keywords' content='')
+  meta(name='description' content='')
+  // Mobile Specific Metas
+  meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
+  // Favicons
+  link(rel='shortcut icon' href='images/favicon.png')
+  link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet')
+  // styles
+  link(href="css/bootstrap/bootstrap.min.css" rel='stylesheet')
+  link(href="css/fontawesome/font-awesome.css" rel='stylesheet')
+  link(href="js/owl-carousel/owl.carousel.css" rel='stylesheet')
+  link(href="js/owl-carousel/owl.theme.css" rel='stylesheet')
+  link(href="js/owl-carousel/owl.transitions.css" rel='stylesheet')
+  link(href="css/magnific-popup.css" rel='stylesheet')
+  link(href="css/animate.css'" type='text/css' rel='stylesheet')
+  link(href="css/style.css " type='text/css' rel='stylesheet')
+  // The HTML5 shim, for IE6-8 support of HTML5 elements
+  //if lt IE 9
+    script(src='js/html5shiv.js')
+    script(src='js/respond.min.js')
+// Start Page loader
+#pageloader
+  | &apos;
+  img(src="images/progress.gif " alt='loader')
+// End Page loader
+// Start Slider
+section#home
+  .slider-overlay
+  .homeslider.flexslider
+    ul.slides
+      li.slide2.bg
+  // / homeslider
+  .tb
+    img.rope-png(src="images/rope.png" height='575px' width='10px;')
+    img.rope2-png(src="images/rope.png" height='575px' width='10px;')
+    img.rope3-png(src="images/rope.png" height='575px' width='10px;')
+    img.rope4-png(src="images/rope.png" height='575px' width='10px;')
+    .page-scroll.scroll
+      a(href='#products')
+        img.product-png(src="images/Menu/prodegg.png" height='100px' width='110px;')
+      .page-scroll.scroll
+        a(href='#cakes')
+          img.cake-png(src="images/Menu/cakeegg.png" height='100px' width='110px;')
+        .page-scroll.scroll
+          a(href='#contact')
+            img.contact-png(src="images/Menu/contactegg.png" height='100px' width='110px;')
+          .page-scroll.scroll
+            a(href='#login')
+              img.reg-png(src="images/Menu/regegg.png" height='100px' width='110px;')
+            .page-scroll.scroll
+              a(href='')
+                img.table-png(src="images/Menu/table.png" height='175px' width='200px;')
+              style.
+                .product-png
+                {
+                position:relative;
+                bottom:350px;
+                left:450px;
+                }
+                .cake-png
+                {
+                position:relative;
+                bottom:550px;
+                left:665px;
+                }
+                .contact-png
+                {
+                position:relative;
+                bottom:550px;
+                left:880px;
+                }
+                .reg-png
+                {
+                position:relative;
+                bottom:750px;
+                left:1088px;
+                }
+                .table-png
+                {
+                position:relative;
+                bottom:580px;
+                left:1000px;
+                }
+                .extra-png
+                {
+                position:relative;
+                top:180px;
+                left:550px;
+                }
+                .rope-png
+                {
+                position:relative;
+                bottom:350px;
+                left:500px;
+                }
+                .rope2-png
+                {
+                position:relative;
+                bottom:450px;
+                left:700px;
+                }
+                .rope3-png
+                {
+                position:relative;
+                bottom:350px;
+                left:900px;
+                }
+                .rope4-png
+                {
+                position:relative;
+                bottom:450px;
+                left:1100px;
+                }
+// start text slider
+.tb
+  .tb-cell
+    .slide-text
+// End Slider
+// Start Navigation
+header#header
+  .container
+    .row
+      .col-sm-12
+        button.navbar-toggle.collapsed(type='button' data-toggle='collapse' data-target='#main-menu')
+          span.sr-only Toggle navigation
+          span.fa.fa-bars
+          span.icon-bar
+          span.icon-bar
+        .clear-toggle
+        #main-menu.collapse.scroll.navbar-right
+          ul.nav
+            li.active
+              a(href='#home') Home
+            li
+              a(href='#login') Login
+            li
+              a(href='#products') PRODUCTS
+            li
+              a(href='#cakes') CAKES
+            li
+              a(href='#contact') Contact
+        // End main-menu
+// End Navigation
+// Start pricing
+section#login.section.parallax
+  script(src='https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js')
+  script.
+    WebFont.load({
+    google: {
+    families: ["Cookie:regular"]
+    }
+    });
+  .loginbody
+    .logintitle
+      h1 Login
+      p  Username:- 
+      input(type='text' name='' placeholder='')
+      p  Password:- 
+      input(type='password' name='' placeholder='')
+      .logincenter
+        a.loginlink(href='#' title='Login')
+      .page-scroll.scroll
+        a.signuplink(href='#register') Sign-Up
+      a.loginpassword(href='#') Forgot Password
+// End Pricing
+// Start pricing
+section#register.section.parallax
+  script(src='https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js')
+  script.
+    WebFont.load({
+    google: {
+    families: ["Cookie:regular"]
+    }
+    });
+  .regbody
+    .regtitle
+      h1 Welcome to CzarinBakes
+      form(name='regform')
+        p  Email:- 
+        input(type='email' name='email' ng-model='user.email' required='')
+        p  Mobile:- 
+        input#Mobile(name='MobileNo' type='tel' size='10' minlength='10' maxlength='10')
+        p  Username:- 
+        input(type='text' name='' placeholder='')
+        p  Password:- 
+        input(type='password' name='' placeholder='')
+        .regcenter
+          a.reglink(href='#' title='Register')
+        //
+          <div class="page-scroll scroll">
+          <a href='#products' class='signuplink'>Sign-Up</a>
+          </div>
+          <a href='#' class='loginpassword'>Forgot Password</a>
+// End Pricing
+.margin
+// Start Services
+section#products.section
+  .container
+    .row
+      // Start heading
+      .col-md-offset-2.col-md-8.wow.zoomIn(data-wow-duration='700ms' data-wow-delay='300ms')
+        .section-header
+          h2.smt
+            span
+              img(src="images/left.png " height='100px;')
+              |   PRODUCTS 
+              img(src="images/right.png " height='100px;')
+      // End heading
+      // Services Item #1
+      .col-md-4.wow.zoomIn(data-wow-duration='700ms' data-wow-delay='300ms')
+        .services-box
+          .services-desc.card
+            .page-scroll.scroll.front.back
+              a(href='#cakes')
+                img(src="images/CusLogo/cus1.png ")
+      // Services Item #2
+      .col-md-4.wow.zoomIn(data-wow-duration='700ms' data-wow-delay='400ms')
+        .services-box
+          .services-desc.card
+            .page-scroll.scroll.front.back
+              a(href='#cakes')
+                img(src="images/CusLogo/cus2.png " height='120px;' width='120px;')
+      // Services Item #3
+      .col-md-4.wow.zoomIn(data-wow-duration='700ms' data-wow-delay='500ms')
+        .services-box
+          .services-desc.card
+            .page-scroll.scroll.front.back
+              a(href='#cakes')
+                img(src="images/CusLogo/cus3.png " height='120px;' width='120px;')
+    // Services Item #4
+    .col-md-4.wow.zoomIn(data-wow-duration='700ms' data-wow-delay='600ms')
+      .services-box
+        .services-desc.card
+          .page-scroll.scroll.front.back
+            a(href='#cakes')
+              img(src="images/CusLogo/cus4.png " height='120px;' width='120px;')
+    // Services Item #5
+    .col-md-4.wow.zoomIn(data-wow-duration='700ms' data-wow-delay='700ms')
+      .services-box
+        .services-desc.card
+          .page-scroll.scroll.front.back
+            a(href='#cakes')
+              img(src="images/CusLogo/cus5.png " height='120px;' width='150px;')
+    .col-md-4.wow.zoomIn(data-wow-duration='700ms' data-wow-delay='700ms')
+      .services-box
+        .services-desc.card
+          .page-scroll.scroll.front.back
+            a(href='#cakes')
+              img(src="images/CusLogo/cus7.png " height='120px;' width='150px;')
+    .col-md-4.wow.zoomIn(data-wow-duration='700ms' data-wow-delay='700ms')
+      .services-box
+        .services-desc.card
+          .page-scroll.scroll.front.back
+            a(href='#cakes')
+              img(src="images/CusLogo/cus8.png " height='120px;' width='150px;')
+    .col-md-4.wow.zoomIn(data-wow-duration='700ms' data-wow-delay='700ms')
+      .services-box
+        .services-desc.card
+          .page-scroll.scroll.front.back
+            a(href='#cakes')
+              img(src="images/CusLogo/cus9.jpg " height='120px;' width='150px;')
+    // Services Item #6
+    .col-md-4.wow.zoomIn(data-wow-duration='700ms' data-wow-delay='800ms')
+      .services-box
+        .services-desc.card
+          .page-scroll.scroll.front.back
+            a(href='#cakes')
+              img(src="images/CusLogo/cus6.png " height='120px;' width='120px;')
+  // /.row
+  // /.container
+// End Services
+// Start facts
+section#facts.section.parallax
+  // /container
+// End facts
+// Start portfolio
+section#cakes.section
+  // Filtering
+  .wow.fadeInUp(data-wow-duration='700ms' data-wow-delay='500ms')
+    // Start heading
+    .col-md-offset-2.col-md-8
+      .section-header
+        h2.smt
+          span
+            img(src="images/left.png " height='100px;')
+            |  Cakes 
+            img(src="images/right.png " height='100px;')
+    // End heading
+    .col-md-12
+      // Filtering
+      ul.filtering
+        li.filter(data-filter='all') All
+        li.filter(data-filter='wedding') Wedding Cakes
+        li.filter(data-filter='muffins') Muffins
+        li.filter(data-filter='birthday') Birthday Special
+        li.filter(data-filter='surprise') Surprise Cakes
+  .full-width.wow.fadeInUp(data-wow-duration='700ms' data-wow-delay='700ms')
+    // Work Grid
+    ul.work-grid
+      // Work Block
+      li.work-item.thumbnail-img.mix.birthday
+        a.popup-image(href="images/works/img1.jpg ")
+          img(src="images/works/img1.jpg" alt='thumbnail' height='400px;')
+        .work-info
+          .work-info-detail.display-table
+            .display-table-cell
+              h4 Birthday
+              p Cakes
+              a.btn.btn-primary.btn-sm.btn-color-white(href='birthdayimg1') Place an Order
+      // Work Block
+      li.work-item.thumbnail-img.mix.birthday
+        a.popup-image(href="images/works/img2.jpg ")
+          img(src="images/works/img2.jpg" alt='thumbnail' height='400px;')
+        .work-info
+          .work-info-detail.display-table
+            .display-table-cell
+              h4 Birthday
+              p Cakes
+              a.btn.btn-primary.btn-sm.btn-color-white(href='#') Place an Order
+      // Work Block
+      li.work-item.thumbnail-img.mix.birthday
+        a.popup-image(href="images/works/img3.jpg ")
+          img(src="images/works/img3.jpg " alt='thumbnail' height='400px;')
+        .work-info
+          .work-info-detail.display-table
+            .display-table-cell
+              h4 Birthday
+              p Cakes
+              a.btn.btn-primary.btn-sm.btn-color-white(href='#') Place an Order
+      // Work Block
+      li.work-item.thumbnail-img.mix.birthday
+        a.popup-image(href="images/works/img4.jpg")
+          img(src="images/works/img4.jpg " alt='thumbnail' height='400px;')
+        .work-info
+          .work-info-detail.display-table
+            .display-table-cell
+              h4 Birthday
+              p Cakes
+              a.btn.btn-primary.btn-sm.btn-color-white(href='#') Place an Order
+      // Work Block
+      li.work-item.thumbnail-img.mix.surprise
+        a.popup-image(href="images/works/img5.jpg")
+          img(src="images/works/img5.jpg" alt='thumbnail' height='400px;')
+        .work-info
+          .work-info-detail.display-table
+            .display-table-cell
+              h4 Surprise
+              p Cakes
+              a.btn.btn-primary.btn-sm.btn-color-white(href='#') Place an Order
+      // Work Block
+      li.work-item.thumbnail-img.mix.birthday
+        a.popup-image(href="images/works/img6.jpg")
+          img(src="images/works/img6.jpg" alt='thumbnail' height='400px;')
+        .work-info
+          .work-info-detail.display-table
+            .display-table-cell
+              h4 Birthday
+              p Cakes
+              a.btn.btn-primary.btn-sm.btn-color-white(href='#') Place an Order
+      // Work Block
+      li.work-item.thumbnail-img.mix.surprise
+        a.popup-image(href="images/works/img7.jpg")
+          img(src="images/works/img7.jpg" alt='thumbnail' height='400px;')
+        .work-info
+          .work-info-detail.display-table
+            .display-table-cell
+              h4 Surprise
+              p Cakes
+              a.btn.btn-primary.btn-sm.btn-color-white(href='#') Place an Order
+      // Work Block
+      li.work-item.thumbnail-img.mix.birthday
+        a.popup-image(href="images/works/img8.jpg")
+          img(src="images/works/img8.jpg" alt='thumbnail' height='400px;')
+        .work-info
+          .work-info-detail.display-table
+            .display-table-cell
+              h4 Birthday
+              p Cakes
+              a.btn.btn-primary.btn-sm.btn-color-white(href='#') Place an Order
+      // Work Block
+      li.work-item.thumbnail-img.mix.wedding
+        a.popup-image(href="images/works/img9.jpg")
+          img(src="images/works/img2.jpg" alt='thumbnail' height='400px;')
+        .work-info
+          .work-info-detail.display-table
+            .display-table-cell
+              h4 Wedding
+              p Cakes
+              a.btn.btn-primary.btn-sm.btn-color-white(href='#') Place an Order
+      li.work-item.thumbnail-img.mix.wedding
+        a.popup-image(href="images/works/img10.jpg")
+          img(src="images/works/img10.jpg" alt='thumbnail' height='400px')
+        .work-info
+          .work-info-detail.display-table
+            .display-table-cell
+              h4 Wedding
+              p Cakes
+              a.btn.btn-primary.btn-sm.btn-color-white(href='#') Place an Order
+      li.work-item.thumbnail-img.mix.wedding
+        a.popup-image(href="images/works/img11.jpg")
+          img(src="images/works/img11.jpg" alt='thumbnail' height='400px;')
+        .work-info
+          .work-info-detail.display-table
+            .display-table-cell
+              h4 Wedding
+              p Cakes
+              a.btn.btn-primary.btn-sm.btn-color-white(href='#') Place an Order
+      li.work-item.thumbnail-img.mix.wedding
+        a.popup-image(href="images/works/img12.jpg")
+          img(src="images/works/img12.jpg" alt='thumbnail' height='400px;')
+        .work-info
+          .work-info-detail.display-table
+            .display-table-cell
+              h4 Wedding
+              p Cakes
+              a.btn.btn-primary.btn-sm.btn-color-white(href='#') Place an Order
+      li.work-item.thumbnail-img.mix.wedding
+        a.popup-image(href="images/works/img13.jpg")
+          img(src="images/works/img13.jpg" alt='thumbnail' height='400px;')
+        .work-info
+          .work-info-detail.display-table
+            .display-table-cell
+              h4 Wedding
+              p Cakes
+              a.btn.btn-primary.btn-sm.btn-color-white(href='#') Place an Order
+      li.work-item.thumbnail-img.mix.muffins
+        a.popup-image(href="images/works/img14.jpg")
+          img(src="images/works/img14.jpg" alt='thumbnail' height='400px;')
+        .work-info
+          .work-info-detail.display-table
+            .display-table-cell
+              h4 Snacks
+              p Muffins
+              a.btn.btn-primary.btn-sm.btn-color-white(href='#') Place an Order
+      li.work-item.thumbnail-img.mix.muffins
+        a.popup-image(href="images/works/img15.jpg")
+          img(src="images/works/img15.jpg" alt='thumbnail' height='400px;')
+        .work-info
+          .work-info-detail.display-table
+            .display-table-cell
+              h4 Snacks
+              p Muffins
+              a.btn.btn-primary.btn-sm.btn-color-white(href='#') Place an Order
+      li.work-item.thumbnail-img.mix.muffins
+        a.popup-image(href="images/works/img16.png")
+          img(src="images/works/img16.png" alt='thumbnail' height='400px;')
+        .work-info
+          .work-info-detail.display-table
+            .display-table-cell
+              h4 Snacks
+              p Muffins
+              a.btn.btn-primary.btn-sm.btn-color-white(href='#') Place an Order
+      li.work-item.thumbnail-img.mix.muffins
+        a.popup-image(href="images/works/img17.jpg")
+          img(src="images/works/img17.jpg" alt='thumbnail' height='400px;')
+        .work-info
+          .work-info-detail.display-table
+            .display-table-cell
+              h4 Snacks
+              p Muffins
+              a.btn.btn-primary.btn-sm.btn-color-white(href='#') Place an Order
+      li.work-item.thumbnail-img.mix.birthday
+        a.popup-image(href="images/works/img18.jpg")
+          img(src="images/works/img18.jpg" alt='thumbnail' height='400px;')
+        .work-info
+          .work-info-detail.display-table
+            .display-table-cell
+              h4 Birthday
+              p Cakes
+              a.btn.btn-primary.btn-sm.btn-color-white(href='#') Place an Order
+      li.work-item.thumbnail-img.mix.birthday
+        a.popup-image(href="images/works/img19.jpeg")
+          img(src="images/works/img19.jpeg" alt='thumbnail' height='400px;')
+        .work-info
+          .work-info-detail.display-table
+            .display-table-cell
+              h4 Birthday
+              p Cakes
+              a.btn.btn-primary.btn-sm.btn-color-white(href='#') Place an Order
+      li.work-item.thumbnail-img.mix.birthday
+        a.popup-image(href="images/works/img20.jpg")
+          img(src="images/works/img20.jpg" alt='thumbnail' height='400px;')
+        .work-info
+          .work-info-detail.display-table
+            .display-table-cell
+              h4 Birthday
+              p Cakes
+              a.btn.btn-primary.btn-sm.btn-color-white(href='#') Place an Order
+      li.work-item.thumbnail-img.mix.birthday
+        a.popup-image(href="images/works/img21.jpg")
+          img(src="images/works/img21.jpg" alt='thumbnail' height='400px;')
+        .work-info
+          .work-info-detail.display-table
+            .display-table-cell
+              h4 Birthday
+              p Cakes
+              a.btn.btn-primary.btn-sm.btn-color-white(href='#') Place an Order
+  .clear
+  .work-all.wow.fadeInUp(data-wow-duration='700ms' data-wow-delay='800ms')
+    a.btn.btn-primary.btn-lg(href='#') View All Portfolio
+// End portfolio
+// start slider
+// end slider-
+// Start Contact
+section#contact.section.parallax.section-white
+  .overlayc
+  .container
+    .row
+      // Start heading
+      .col-md-offset-2.col-md-8.wow.zoomIn(data-wow-duration='700ms' data-wow-delay='300ms')
+        .section-header
+          h2.smt
+            span
+              img(src="images/left.png " height='100px;')
+              | Contact 
+              img(src="images/right.png " height='100px;')
+      // End heading
+      // Start contact form
+      .col-md-7.contact-form.wow.zoomIn(data-wow-duration='700ms' data-wow-delay='300ms')
+        .contact-form
+          form(method='post' action='')
+            .row
+              .col-md-6
+                input#name.form-control(name='name' placeholder='Full Name' type='text')
+              .col-md-6
+                input.form-control(name='email' placeholder='Your Email' type='email')
+              .col-md-12
+                input.form-control(name='subject' placeholder='Subject' type='text')
+              .col-md-12
+                textarea.form-control(name='message' rows='5' placeholder='Your Message')
+              .col-md-12.text-right
+                button.btn.btn-default.btn-lg(type='submit' name='submit') Send Message
+        // /.contact-form
+      // contact form
+      // Start contact information
+      .col-md-4.contact-address.wow.zoomIn(data-wow-duration='700ms' data-wow-delay='400ms')
+        p
+          i.fa.fa-map-marker
+          span 28,X block Horizon Apartment 1030-Th Road Chennai
+        p
+          i.fa.fa-envelope
+          span jeffersonimmanuel5@gmail.com
+        p
+          i.fa.fa-phone
+          span (91)9962627568
+        p
+          i.fa.fa-clock-o
+          span
+            | Monday - Friday: 
+            strong 9:00 am - 10:00 pm
+        p
+          i.fa.fa-clock-o
+          span
+            | Saturday - Sunday: 
+            strong Closed
+      // End contact information
+    // /.row
+  // /.container
+// End Contact
+// Start footer
+footer
+  .container.wow.zoomIn(data-wow-duration='700ms' data-wow-delay='500ms')
+    .row
+      .col-md-12.text-center
+        // Start footer social
+        ul.list-inline.footer-social
+          li
+            a(href='#')
+              i.fa.fa-facebook
+          li
+            a(href='#')
+              i.fa.fa-vimeo-square
+          li
+            a(href='#')
+              i.fa.fa-instagram
+          li
+            a(href='#')
+              i.fa.fa-behance
+          li
+            a(href='#')
+              i.fa.fa-twitter
+          li
+            a(href='#')
+              i.fa.fa-dribbble
+        // End footer social
+        // footer copyright text
+        p Copyright &copy; 2017 All reserved
+        // end of the footer copyright text
+    // /.row
+  // /.container
+// End footer
+a.scrollup(href='#')
+  i.fa.fa-chevron-up  
+// Plugins
+script(type='text/javascript' src="js/jquery-1.11.1.min.js")
+script(type='text/javascript' src="js/bootstrap.min.js")
+script(type='text/javascript' src="js/owl-carousel/owl.carousel.js")
+script(type='text/javascript' src="js/jquery.flexslider-min.js")
+script(type='text/javascript' src="js/jquery.bxslider.min.js")
+script(type='text/javascript' src="js/jquery.magnific-popup.min.js")
+script(type='text/javascript' src="js/easing.js")
+script(type='text/javascript' src="js/jquery.parallax-1.1.3.js")
+script(type='text/javascript' src="js/jquery.sticky.js")
+script(type='text/javascript' src="js/jquery.mixitup.min.js")
+script(type='text/javascript' src="js/wow.min.js")
+script(type='text/javascript' src="js/custom.js")
